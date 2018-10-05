@@ -1,0 +1,36 @@
+class Cliente:
+    def __init__(self):
+        self.nombre=None
+        
+    def solicitarAtencion(self): #los métodos de una clase siempre debe tener "self"
+        print("El cliente {} solicitó atención".format(self.nombre))
+
+class Empleado:
+    def __init__(self, nombre, codigo):
+        self.nombre=nombre
+        self.codigo=codigo
+    def iniciarLabores(self):
+        print("El empleado {} inicia labores".format(self.nombre))
+        
+class Mozo(Empleado):
+    def recibirPedido(self, pedido):
+        print("El mozo {} recibio {} como Pedido".format(self.nombre, pedido))
+        
+class Cocinero(Empleado):
+    def prepararPlato(self, pedido):
+        print("El cocinero {} comienza a preparar el plato {}".format(self.nombre, pedido))
+        
+def main():
+    m1=Mozo("Juanito",1)
+    m1.iniciarLabores()
+    m1.recibirPedido("Cevivhe")
+    
+    c1=Cocinero("Luisito",2)
+    c1.iniciarLabores()
+    
+    
+    
+if __name__=="__main__":
+    main()
+
+
