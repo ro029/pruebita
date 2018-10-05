@@ -1,0 +1,8 @@
+Patrón State
+se tiene un solo estado inicial
+y pueden tener varios estados finales o ninguno
+
+Patrón Chain of Responsability
+Si llega una petición y el miembro 1 puede resolverlo, lo hace y muere el proceso, si no puede, lo pasa al miembro 2 y así...
+por eso se llama cadena de decisión
+
